@@ -152,6 +152,8 @@ Requires:         iscsi-initiator-utils
 
 Requires:         python-osprofiler
 
+Requires:         python-keystonemiddleware
+
 %description -n   python-cinder
 OpenStack Volume (codename Cinder) provides services to manage and
 access block storage volumes for use by Virtual Machine instances.
@@ -347,6 +349,9 @@ exit 0
 %endif
 
 %changelog
+* Wed Dec 14 2016 Martin Surovcak <martin.surovcak@gooddata.com>
+- add python-keystonemiddleware dependency
+
 * Fri Aug 26 2016 Tomas Dubec <tomas.dubec@gooddata> 8.0.0-1.gdc1
 - adapt spec for GoodData build
 
